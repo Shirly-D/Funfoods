@@ -107,6 +107,18 @@ li {
   Header styling starts here
 =================================*/
 
+header .wrapper {
+  width: 50%;
+}
+
+.logo {
+  width: 24%;
+  z-index: 3;
+  position: absolute;
+  left: 40%;
+  top: 50px;
+  
+}
 
 
 
@@ -120,7 +132,30 @@ li {
   main styling starts here
 =================================*/
 
+main .wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+.bg-image {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #000;
+}
 
+.text {
+  text-transform: capitalize;
+  font-size: 60px;
+  font-family: serif;
+  color: #ff0000;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  top: 80px;
+
+}
 
 
 
