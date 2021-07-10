@@ -103,6 +103,12 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
+
+.container {
+  width: 12%;
+  margin: 0 auto;
+  overflow: hidden;
+}
 /*=================================
   Header styling starts here
 =================================*/
@@ -112,11 +118,11 @@ header .wrapper {
 }
 
 .logo {
-  width: 24%;
+  width: 7%;
   z-index: 3;
   position: absolute;
-  left: 40%;
-  top: 50px;
+  left: 46%;
+  top: 10px;
   
 }
 
@@ -138,24 +144,49 @@ main .wrapper {
   max-width: 1400px;
 }
 .bg-image {
-  width: 50%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
+  width: 100%;
+  display: block;
+  /* margin: 0 auto; */
+  /* position: relative; */
   border: 1px solid #000;
+  box-sizing: border-box;
 }
 
-.text {
+main p {
   text-transform: capitalize;
-  font-size: 60px;
+  font-size: 20px;
   font-family: serif;
   color: #ff0000;
   text-align: center;
-  z-index: 3;
-  position: absolute;
-  top: 80px;
+}
+
+@keyframes text1 {
+  0%, 100% {
+    transform: translate(0%);
+    animation-delay: 10s;
+  }
+  50% ,75% {
+    transform: translate(-100%);
+    left: 55%;
+  }
 
 }
+
+.text1 {
+  width: 10%;
+  position: absolute;
+  left: -100%;
+  z-index: 3;
+  top: 90px;
+  animation-name: text1;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+
+
+}
+
+
 
 
 
@@ -169,6 +200,39 @@ main .wrapper {
 /*=================================
   footer styling starts here
 =================================*/ 
+
+.table {
+  width: 12%;
+  position: absolute;
+  top: 562px;
+  z-index: 3;
+  left: 44%;
+  animation-delay: 2s;
+  animation-name: table;
+  animation-timing-function: ease-in;
+}
+
+
+.plate {
+  width: 10%;
+  position: absolute;
+  top: 580px;
+  z-index: 3;
+  left: -1000px;
+  animation-name: plate;
+  animation-timing-function: ease-in-out;
+  animation-duration: 7s;
+}
+
+@keyframes plate {
+  0% {transform: translate(0, 0);}
+  50% {
+    transform: translate(-100%);
+    left: 55%;
+    animation-delay: 4s;
+  }
+  100% {transform: translate(0, 0);}
+}
 
 
 
